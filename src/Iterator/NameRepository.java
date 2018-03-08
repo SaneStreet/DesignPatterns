@@ -11,6 +11,7 @@ public class NameRepository implements Container{
     private class NameIterator implements Iterator{
         int index;
 
+        //If index number is less than the length of the array names, return true
         @Override
         public boolean hasNext(){
             if (index < names.length){
@@ -19,6 +20,7 @@ public class NameRepository implements Container{
             return false;
         }
 
+        //If hasNext() is true, add 1 to index
         @Override
         public Object next(){
             if (this.hasNext()){
