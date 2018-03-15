@@ -1,6 +1,10 @@
 package Factory;
 
 public class InfantryUnit {
+    public int range;
+    public int armor;
+    public int hits;
+    public int damage;
 
     //Concstructs infantry
     public InfantryUnit(int range, int armor, int hits, int damage){
